@@ -25,14 +25,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <script src="./plugins/jQuery/jquery.min.js"></script>
-        <script src="./plugins/bootstrap/bootstrap.min.js" ></script>
-        <script src="./plugins/slick/slick.min.js"></script>
-        <script src="./plugins/slick/slick-animation.min.js"></script>
-        <script src="./plugins/colorbox/jquery.colorbox.js"></script>
+        <script src="./plugins/jQuery/jquery.min.js" defer></script>
+        <script src="./plugins/bootstrap/bootstrap.min.js" defer></script>
+        <script src="./plugins/slick/slick.min.js" defer></script>
+        <script src="./plugins/slick/slick-animation.min.js" defer></script>
+        <script src="./plugins/colorbox/jquery.colorbox.js" defer></script>
         <script src="./plugins/shuffle/shuffle.min.js" defer></script>
         <script src="./plugins/shuffle/shuffle.min.js" defer></script>
-        <script src="./plugins/js/script.js" ></script>
+        <script src="./plugins/js/script.js" defer></script>
       </body>
     </html>
   );

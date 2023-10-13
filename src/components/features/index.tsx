@@ -1,5 +1,7 @@
+import { Section } from "@/components";
+
 export const Features = () => (
-  <section id="ts-features" className="ts-features">
+  <Section id="ts-features" className="ts-features">
     <div className="container">
       <div className="row">
         <div className="col-lg-6">
@@ -24,7 +26,7 @@ export const Features = () => (
                 </span>
                 <div className="ts-service-box-content">
                   <h3 className="service-box-title">
-                    We've Repution for Excellence
+                    We&apos;ve Repution for Excellence
                   </h3>
                 </div>
               </div>
@@ -165,5 +167,5 @@ export const Features = () => (
         </div>
       </div>
     </div>
-  </section>
+  </Section>
 );

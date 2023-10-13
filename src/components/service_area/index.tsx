@@ -7,9 +7,10 @@ import ServiceIcon6 from "@/app/assets/images/icon-image/service-icon6.png";
 import ServiceCenter from "@/app/assets/images/services//service-center.jpg"
 
 import { ServiceAreaItem } from "./service-area-item";
+import { Section } from "@/components";
 
 export const ServiceArea = () => (
-  <section id="ts-service-area" className="ts-service-area pb-0">
+  <Section id="ts-service-area" className="ts-service-area pb-0">
     <div className="container">
       <div className="row text-center">
         <div className="col-12">
@@ -71,5 +72,5 @@ export const ServiceArea = () => (
         </div>
       </div>
     </div>
-  </section>
+  </Section>
 );
