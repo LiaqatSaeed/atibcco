@@ -10,9 +10,17 @@ pnpm install
 pnpm run build
 
 echo "$(pwd)"
+# Step 2: Check if .next folder exists or not
+if [ -d "$destination_folder/.next" ]; then
+  # delete if exists
+  echo ".next folder found in destination folder. Deleting..."
+  rm -rf "$destination_folder/.next"
+else
+  echo ".next folder not found in destination folder."
+fi
 
 # Step 2: Copy the build to the destination repository
-cp -r "./.next" "$DESTINATION_REPO_DIR"
+cp -r "./.next" "$DESTINATION_DIR"
 
 # Step 3: Navigate to the destination repository
 cd "$DESTINATION_REPO_DIR"
