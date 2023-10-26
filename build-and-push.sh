@@ -23,3 +23,10 @@ cd "$DESTINATION_REPO_DIR"
 # Step 4: Add, commit, and push the changes
 git add .
 git commit -m "Update Next.js build"
+git push origin liaqat/build
+
+# Step 5: Clean up (optional)
+rm -rf "$DESTINATION_REPO_DIR/.next"
+
+# Provide some feedback
+echo "Build has been successfully created and pushed to the destination repository on GitHub."
