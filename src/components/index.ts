@@ -1,8 +1,9 @@
+export { Logo } from "./logo";
 export { Section } from "./section";
 export { Footer } from "./footer";
 export { Testimonals } from "./testimonials";
 export { RecentProjects } from "./recent-projects";
-export { ServiceArea } from "./service_area";
+export { ServiceArea } from "./service-area";
 export { Facts } from "./facts";
 export { Features } from "./features";
 export { RequestQuote } from "./request-quote";

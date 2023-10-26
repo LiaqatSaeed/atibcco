@@ -1,12 +1,13 @@
+import { Logo } from "@/components";
+
+
 export const CompanyInfo = () => (
   <div className="bg-white">
     <div className="container">
       <div className="logo-area">
         <div className="row align-items-center">
           <div className="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
-            <a className="d-block" href="index.html">
-              {/* <img loading="lazy" src="images/logo.png" alt="Constra" /> */}
-            </a>
+            <Logo/>
           </div>
 
           <div className="col-lg-9 header-right">

@@ -1,10 +1,7 @@
-import { useEffect, useRef } from "react";
 import Banner1 from "../../app/assets/images/banner/banner1.jpg";
 import Banner2 from "../../app/assets/images/banner/banner2.jpg";
 import Banner3 from "../../app/assets/images/banner/banner3.jpg";
 import { BannerItem1, BannerItem2, BannerItem3 } from "./banner-item";
-import { useELementLoaded } from "@/hooks/use-element-load";
-import Slider from "react-slick";
 
 const NextArrow = () => (
   <button

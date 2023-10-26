@@ -1,5 +1,5 @@
 import { PROJECTS, PROJECT_TYPES } from "@/helpers/consts";
-import { ShuffleButton } from "./ShuffleButton";
+import { ShuffleButton } from "./shuffle-button";
 import { Project } from "./project";
 import { useState } from "react";
 import { Section } from "@/components";
@@ -18,26 +18,7 @@ export const RecentProjects = () => {
 
         <div className="row">
           <div className="col-12">
-          <label
-                  htmlFor="option1"
-                  onClick={() => {
-                    debugger;
-                  }}
-                >
-                  <input
-                    type="radio"
-                    id="option1"
-                    name="options"
-                    value="option1"
-                    onChange={() => {
-                      debugger;
-                    }}
-                  />
-                  Option 1
-                </label>
             <div className="shuffle-btn-group">
-              
-
               {PROJECT_TYPES.map((item, index) => (
                 <ShuffleButton
                   key={`${item}-${index}`}
