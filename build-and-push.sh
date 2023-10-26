@@ -11,10 +11,10 @@ pnpm run build
 
 
 # Step 2: Check if .next folder exists or not
-if [ -d "$destination_folder/.next" ]; then
+if [ -d "$DESTINATION_DIR/.next" ]; then
   # delete if exists
   echo ".next folder found in destination folder. Deleting..."
-  rm -rf "$destination_folder/.next"
+  rm -rf "$DESTINATION_DIR/.next"
 else
   echo ".next folder not found in destination folder."
 fi
