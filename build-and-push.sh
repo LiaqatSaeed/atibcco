@@ -25,7 +25,7 @@ cp -r "./.next" "$DESTINATION_DIR"
 # Step 3: Navigate to the destination repository
 cd "$DESTINATION_REPO_DIR"
 
-echo "$(pwd)"
+echo "folder active $(pwd)"
 
 # Step 4: Add, commit, and push the changes
 git add .
