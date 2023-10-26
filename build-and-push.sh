@@ -9,7 +9,7 @@ DESTINATION_DIR="$PARENT_DIR/$DESTINATION_FOLDER_NAME"
 pnpm install
 pnpm run build
 
-echo "$(pwd)"
+
 # Step 2: Check if .next folder exists or not
 if [ -d "$destination_folder/.next" ]; then
   # delete if exists
@@ -24,6 +24,8 @@ cp -r "./.next" "$DESTINATION_DIR"
 
 # Step 3: Navigate to the destination repository
 cd "$DESTINATION_REPO_DIR"
+
+echo "$(pwd)"
 
 # Step 4: Add, commit, and push the changes
 git add .
