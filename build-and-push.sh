@@ -2,20 +2,17 @@
 
 # Set your source and destination repository directories
 PARENT_DIR=$(dirname "$(pwd)")
-SOURCE_REPO_FOLDER_NAME="atibcoo"
 DESTINATION_FOLDER_NAME="atibcco.com"  # Replace with your desired folder name
-SOURCE_REPO_DIR="$PARENT_DIR/$SOURCE_REPO_FOLDER_NAME"
 DESTINATION_DIR="$PARENT_DIR/$DESTINATION_FOLDER_NAME"
 
 # Step 1: Build the Next.js project in the source repository
-cd "$SOURCE_REPO_DIR"
 pnpm install
 pnpm run build
 
 echo "$(pwd)"
 
 # Step 2: Copy the build to the destination repository
-cp -r "$SOURCE_REPO_DIR/.next" "$DESTINATION_REPO_DIR"
+cp -r "./.next" "$DESTINATION_REPO_DIR"
 
 # Step 3: Navigate to the destination repository
 cd "$DESTINATION_REPO_DIR"
