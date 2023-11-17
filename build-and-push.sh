@@ -11,29 +11,19 @@ pnpm run build
 
 
 # Step 2: Check if .next folder exists or not
-if [ -d "$DESTINATION_DIR/.next" ]; then
+if [ -d "$DESTINATION_DIR/build" ]; then
   # delete if exists
-  echo ".next folder found in destination folder. Deleting..."
-  rm -rf "$DESTINATION_DIR/.next"
+  echo "build folder found in destination folder. Deleting..."
+  rm -rf "$DESTINATION_DIR/build"
 else
-  echo ".next folder not found in destination folder."
+  echo "build folder not found in destination folder."
 fi
 
 # Step 2: Copy the build to the destination repository
-cp -r "./.next" "$DESTINATION_DIR"
+cp -r "./build" "$DESTINATION_DIR/build"
 
-# Step 3: Navigate to the destination repository
-cd "$DESTINATION_REPO_DIR"
-
-echo "folder active $(pwd)"
-
-# Step 4: Add, commit, and push the changes
-git add .
-git commit -m "Update Next.js build"
-git push origin liaqat/build
-
-# Step 5: Clean up (optional)
-rm -rf "$DESTINATION_REPO_DIR/.next"
+# Step 3: Clean up (optional)
+rm -rf "$DESTINATION_REPO_DIR/*"
 
 # Provide some feedback
 echo "Build has been successfully created and pushed to the destination repository on GitHub."

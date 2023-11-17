@@ -1,5 +1,7 @@
 /* Bootstrap */
 
+@import '../variables';
+
 .nav-tabs>li.active>a,
 .nav-tabs>li.active>a:focus,
 .nav-tabs>li.active>a:hover,
@@ -631,7 +633,7 @@ ul.navbar-nav>li>a {
 }
 
 .header-get-a-quote .btn-primary:hover {
-  background: #272d33;
+  background: $color-secondary;
   color: $color-primary !important;
 }
 

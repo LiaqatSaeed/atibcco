@@ -1,9 +1,9 @@
-import ServiceIcon1 from "@/app/assets/images/icon-image/service-icon1.png";
-import ServiceIcon2 from "@/app/assets/images/icon-image/service-icon2.png";
-import ServiceIcon3 from "@/app/assets/images/icon-image/service-icon3.png";
-import ServiceIcon4 from "@/app/assets/images/icon-image/service-icon4.png";
-import ServiceIcon5 from "@/app/assets/images/icon-image/service-icon5.png";
-import ServiceIcon6 from "@/app/assets/images/icon-image/service-icon6.png";
+import ServiceIcon1 from "@/app/assets/images/icon-image/service-icon1.svg";
+import ServiceIcon2 from "@/app/assets/images/icon-image/service-icon2.svg";
+import ServiceIcon3 from "@/app/assets/images/icon-image/service-icon3.svg";
+import ServiceIcon4 from "@/app/assets/images/icon-image/service-icon4.svg";
+import ServiceIcon5 from "@/app/assets/images/icon-image/service-icon5.svg";
+import ServiceIcon6 from "@/app/assets/images/icon-image/service-icon6.svg";
 import ServiceCenter from "@/app/assets/images/services//service-center.jpg"
 
 import { ServiceAreaItem } from "./service-area-item";

@@ -3,10 +3,11 @@ import { style } from "@vanilla-extract/css";
 
 export const logoStyle = style({
   fontSize: tokens.fontSize.xxxxl,
+  color: tokens.colors.primary,
 
   selectors: {
     '&:hover' : {
-        color: tokens.colors.orange
+        color: tokens.colors.secondary
     }
   }
 });

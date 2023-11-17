@@ -21,6 +21,8 @@
 
 /* Slider
 ================================================== */
+@import '../variables';
+
 /*-- Main slide --*/
 .banner-carousel .banner-carousel-item {
   height: 700px;
@@ -274,7 +276,7 @@
 ================================================== */
 
 .call-to-action {
-  background-color: #272d33;
+  background-color: $color-secondary;
   padding: 30px;
 }
 
@@ -348,7 +350,7 @@
 
 .featured-tab .nav-tabs>li>a {
   font-family: 'Roboto Slab', serif;
-  background: #272d33;
+  background: $color-secondary;
   color: #fff;
   text-shadow: none;
   font-weight: 700;
@@ -991,7 +993,7 @@
   left: 0;
   top: 0;
   font-weight: 700;
-  color: #ffc009;
+  color: $color-primary;
 }
 
 .testimonial-slide .slick-dots {

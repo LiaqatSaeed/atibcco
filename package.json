@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "export": "next export",
     "commit": "git add . && npx cz",
     "build:push": "./build-and-push.sh"
   },
@@ -17,6 +18,8 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "next": "13.5.4",
+    "next-compose-plugins": "^2.2.1",
+    "next-images": "^1.8.5",
     "react": "^18",
     "react-dom": "^18"
   },

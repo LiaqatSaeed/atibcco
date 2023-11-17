@@ -1,7 +1,7 @@
-import Fact1 from "@/app/assets/images/icon-image/fact1.png";
-import Fact2 from "@/app/assets/images/icon-image/fact2.png";
-import Fact3 from "@/app/assets/images/icon-image/fact3.png";
-import Fact4 from "@/app/assets/images/icon-image/fact4.png";
+import Fact1 from "@/app/assets/images/icon-image/fact1.svg";
+import Fact2 from "@/app/assets/images/icon-image/fact2.svg";
+import Fact3 from "@/app/assets/images/icon-image/fact3.svg";
+import Fact4 from "@/app/assets/images/icon-image/fact4.svg";
 import { FactItem } from "./fact-item";
 import { Section } from "@/components";
 

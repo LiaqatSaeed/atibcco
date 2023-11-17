@@ -24,7 +24,7 @@ export const CompanyInfo = () => (
                 <div className="info-box">
                   <div className="info-box-content">
                     <p className="info-box-title">Email Us</p>
-                    <p className="info-box-subtitle">office@Constra.com</p>
+                    <p className="info-box-subtitle">office@atibcoo.com</p>
                   </div>
                 </div>
               </li>
