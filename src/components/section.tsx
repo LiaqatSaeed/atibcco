@@ -6,8 +6,6 @@ interface ISectionProps {
   id?: string;
 }
 
-
-
 export const Section = ({ children, id, className }: ISectionProps) => (
   <section  className={cx("section-padding", className)} id={id}>{children}</section>
 );

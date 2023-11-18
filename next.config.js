@@ -10,7 +10,7 @@ const {
 
 const nextConfig = {
   output: 'export',
-  //assetPrefix: '/atibcco.com',
+  assetPrefix: '/atibcco.com',
   images:{
     formats:['image/webp']
   },
@@ -20,7 +20,7 @@ const nextConfig = {
   },
 }
 
-module.exports = withVanillaExtract(withPlugins(
-  [withImages],
+module.exports = withPlugins(
+  [withImages, withVanillaExtract()],
   nextConfig
-));
+);

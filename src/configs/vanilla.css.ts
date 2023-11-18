@@ -31,11 +31,8 @@ export const size = {
   full: '100%'
 };
 
-// Rest of the imports and design tokens...
-
 export const vars = createThemeContract({
   colors: {
-    primary: ``,
     background: ``,
     ...colors,
   },
@@ -108,11 +105,8 @@ const commonVars = {
   },
 };
 
-// Rest of the imports, design tokens, and theme contract...
-
 export const lightThemeVars = createGlobalTheme(":root", {
   colors: {
-    primary: colors.black,
     background: colors.blueGray,    
     ...colors,
   },
@@ -121,13 +115,11 @@ export const lightThemeVars = createGlobalTheme(":root", {
 
 export const darkThemeVars = createGlobalTheme(":root", {
   colors: {
-    primary: colors.black,
     background: colors.blueGray,  
     ...colors,
   },
   ...commonVars,
 });
 
-// TODO: will be Logically handle through App Context
 const isLightTheme = true;
 export const tokens = isLightTheme ? lightThemeVars : darkThemeVars;

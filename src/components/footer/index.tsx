@@ -1,3 +1,5 @@
+import { Logo } from "@/components";
+
 export const Footer = () => (
   <footer id="footer" className="footer bg-overlay">
     <div className="footer-main">
@@ -5,13 +7,7 @@ export const Footer = () => (
         <div className="row justify-content-between">
           <div className="col-lg-4 col-md-6 footer-widget footer-about">
             <h3 className="widget-title">About Us</h3>
-            <img
-              loading="lazy"
-              width="200px"
-              className="footer-logo"
-              src="images/footer-logo.png"
-              alt="Constra"
-            />
+            <Logo/>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor inci done idunt ut labore et dolore magna aliqua.
